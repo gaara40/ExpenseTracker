@@ -1,16 +1,10 @@
-# expense_tracker
+# ExpenseTracker
+A beautifully designed Flutter application that easily helps you track your daily expenses. Users can add, delete, edit, and sort expenses across categories such as Essentials, Work, Travel, and Leisure. The app uses Hive for lightweight local storage and Provider for efficient state management.
 
-A new Flutter project.
+✨ Features 📅 Add expenses with title, amount, category, and date 📊 Visualize spending with a bar chart (category-wise) 🧠 Local data persistence using Hive 🔄 Undo deletion of expenses 🔧 Edit existing expenses
 
-## Getting Started
+🧭 Sort by: Newest to Oldest, Oldest to Newest, Highest to Lowest amount, Lowest to Highest amount
 
-This project is a starting point for a Flutter application.
+🎨 Clean and minimal UI with icons for each category
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📦 Tech Stack Flutter Dart Hive (local storage) Provider (state management)
