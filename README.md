@@ -7,4 +7,4 @@ A beautifully designed Flutter application that easily helps you track your dail
 
 🎨 Clean and minimal UI with icons for each category
 
-📦 Tech Stack Flutter Dart Hive (local storage) Provider (state management)
+📦 Tech Stack: Flutter, Dart, Hive (local storage), Provider (state management)
