@@ -84,7 +84,7 @@ class _EditExpenseState extends State<EditExpense> {
             ),
             const SizedBox(height: 30),
             DropdownButtonFormField(
-              value: _selectedCategory,
+              initialValue: _selectedCategory,
               decoration: const InputDecoration(labelText: 'Category'),
               icon: const Icon(Icons.arrow_drop_down),
               items: Category.values
