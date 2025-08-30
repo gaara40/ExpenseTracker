@@ -23,13 +23,4 @@ final ThemeData trackerTheme = ThemeData(
       textStyle: const TextStyle(fontWeight: FontWeight.bold),
     ),
   ),
-  cardTheme: CardTheme(
-    margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-    color: Colors.white,
-    elevation: 5,
-    shadowColor: Colors.black.withValues(alpha: 1),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(16),
-    ),
-  ),
 );
