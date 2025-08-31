@@ -3,14 +3,14 @@ import 'package:expense_tracker/themes/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AddExpenseScreen extends StatelessWidget {
-  const AddExpenseScreen({super.key});
+class AddExpenseOverlay extends StatelessWidget {
+  const AddExpenseOverlay({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: blueGradient,
         ),
         child: SafeArea(

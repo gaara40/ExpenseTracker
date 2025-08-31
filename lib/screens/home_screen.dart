@@ -1,6 +1,6 @@
 import 'package:expense_tracker/model/expense_model.dart';
 import 'package:expense_tracker/providers/expense_provider.dart';
-import 'package:expense_tracker/screens/add_expense_screen.dart';
+import 'package:expense_tracker/widgets/add_expense_overlay.dart';
 import 'package:expense_tracker/widgets/chart.dart';
 import 'package:expense_tracker/widgets/expenses_list.dart';
 import 'package:flutter/material.dart';
@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
         context: context,
         isScrollControlled: true,
         isDismissible: false,
-        builder: (context) => const AddExpenseScreen());
+        builder: (context) => const AddExpenseOverlay());
   }
 
   void _removeExpense(ExpenseModel expense) {

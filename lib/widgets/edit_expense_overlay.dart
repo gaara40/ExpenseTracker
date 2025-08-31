@@ -1,11 +1,10 @@
-import 'package:expense_tracker/forms/edit_expense.dart';
 import 'package:expense_tracker/model/expense_model.dart';
 import 'package:expense_tracker/themes/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class EditExpenseScreen extends StatelessWidget {
-  const EditExpenseScreen({super.key, required this.expense});
+class EditExpenseOverlay extends StatelessWidget {
+  const EditExpenseOverlay({super.key, required this.expense});
 
   final ExpenseModel expense;
 
@@ -13,7 +12,7 @@ class EditExpenseScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: blueGradient,
         ),
         child: SafeArea(
@@ -41,7 +40,7 @@ class EditExpenseScreen extends StatelessWidget {
                         topRight: Radius.circular(30),
                       ),
                     ),
-                    child: EditExpense(
+                    child: EditExpenseOverlay(
                       expense: expense,
                     ),
                   ),

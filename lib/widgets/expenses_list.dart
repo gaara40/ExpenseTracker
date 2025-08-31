@@ -1,5 +1,5 @@
 import 'package:expense_tracker/model/expense_model.dart';
-import 'package:expense_tracker/screens/edit_expense_screen.dart';
+import 'package:expense_tracker/widgets/edit_expense_overlay.dart';
 import 'package:expense_tracker/widgets/expense_item.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +46,7 @@ class ExpensesList extends StatelessWidget {
                   isScrollControlled: true,
                   isDismissible: false,
                   builder: (context) =>
-                      EditExpenseScreen(expense: expenses[index]));
+                      EditExpenseOverlay(expense: expenses[index]));
               return false;
             }
             return false;

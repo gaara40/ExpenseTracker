@@ -1,6 +1,6 @@
 import 'package:expense_tracker/model/expense_model.dart';
 import 'package:expense_tracker/providers/expense_provider.dart';
-import 'package:expense_tracker/screens/home_screen.dart';
+import 'package:expense_tracker/splashLauncher/splash_launcher.dart';
 import 'package:expense_tracker/themes/theme_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const HomeScreen(),
+      home: const SplashLauncher(),
       theme: trackerTheme,
     );
   }
