@@ -184,7 +184,7 @@ class _EditExpenseState extends State<EditExpense> {
     final pickedDate = await showDatePicker(
       context: context,
       initialDate: now,
-      firstDate: DateTime(now.year, now.month, 1),
+      firstDate: DateTime(now.year, 1),
       lastDate: now,
     );
     if (pickedDate != null) {
