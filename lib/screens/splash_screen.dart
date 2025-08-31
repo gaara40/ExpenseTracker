@@ -12,15 +12,27 @@ class SplashScreen extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(gradient: blueGradient),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Stack(
           children: [
-            Image.asset(
-              'assets/icons/expense_tracker_icon1.png',
-              width: 180,
-              height: 180,
-              fit: BoxFit.contain,
+            //icon
+            Center(
+              child: Image.asset(
+                'assets/icons/expense_tracker_icon1.png',
+                width: 180,
+                height: 180,
+                fit: BoxFit.contain,
+              ),
+            ),
+            //loader at the bottom
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 40,
+              child: Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation(appPrimaryColor),
+                ),
+              ),
             ),
           ],
         ),
