@@ -1,3 +1,4 @@
+import 'package:expense_tracker/forms/edit_expense.dart';
 import 'package:expense_tracker/model/expense_model.dart';
 import 'package:expense_tracker/themes/constants.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class EditExpenseOverlay extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: blueGradient,
+          gradient: overlayBackgroundGradient,
         ),
         child: SafeArea(
           child: Padding(
@@ -27,7 +28,7 @@ class EditExpenseOverlay extends StatelessWidget {
                     style: GoogleFonts.robotoSlab(
                         fontWeight: FontWeight.bold,
                         fontSize: 38,
-                        color: Colors.white.withValues(alpha: 0.7)),
+                        color: Colors.white.withValues(alpha: 0.8)),
                   ),
                 ),
                 const SizedBox(height: 50),
@@ -40,7 +41,7 @@ class EditExpenseOverlay extends StatelessWidget {
                         topRight: Radius.circular(30),
                       ),
                     ),
-                    child: EditExpenseOverlay(
+                    child: EditExpense(
                       expense: expense,
                     ),
                   ),

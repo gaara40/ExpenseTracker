@@ -11,7 +11,7 @@ class SplashScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(gradient: blueGradient),
+        decoration: BoxDecoration(gradient: chartBackgroundGradient),
         child: Stack(
           children: [
             //icon

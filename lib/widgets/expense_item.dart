@@ -11,7 +11,7 @@ class ExpenseItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(13),
+        padding: const EdgeInsets.all(12),
         child: Row(
           children: [
             CircleAvatar(

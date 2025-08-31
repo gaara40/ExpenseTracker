@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
             builder: (context, value, child) =>
                 Chart(expenses: value.registeredExpenses),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 2),
           Consumer<ExpenseProvider>(builder: (context, value, child) {
             final registeredExpenses = value.registeredExpenses;
             return Expanded(
@@ -84,9 +84,13 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontWeight: FontWeight.bold, fontSize: 15),
                         ),
                       )
-                    : ExpensesList(
-                        expenses: registeredExpenses,
-                        onDeletedExpense: _removeExpense,
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 5, vertical: 2),
+                        child: ExpensesList(
+                          expenses: registeredExpenses,
+                          onDeletedExpense: _removeExpense,
+                        ),
                       ));
           }),
         ],

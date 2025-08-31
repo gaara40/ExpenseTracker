@@ -70,7 +70,7 @@ class _NewExpenseState extends State<NewExpense> {
             ),
             const SizedBox(height: 30),
             DropdownButtonFormField(
-              value: _selectedCategory,
+              initialValue: _selectedCategory,
               decoration: const InputDecoration(
                 labelText: 'Category',
               ),
@@ -164,7 +164,7 @@ class _NewExpenseState extends State<NewExpense> {
     final pickedDate = await showDatePicker(
       context: context,
       initialDate: now,
-      firstDate: DateTime(now.year, now.month, 1),
+      firstDate: DateTime(now.year, 1),
       lastDate: now,
     );
     if (pickedDate != null) {

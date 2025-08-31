@@ -10,9 +10,7 @@ class AddExpenseOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          gradient: blueGradient,
-        ),
+        decoration: BoxDecoration(gradient: overlayBackgroundGradient),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(top: 20),
@@ -25,7 +23,7 @@ class AddExpenseOverlay extends StatelessWidget {
                     style: GoogleFonts.robotoSlab(
                         fontWeight: FontWeight.bold,
                         fontSize: 38,
-                        color: Colors.white.withValues(alpha: 0.7)),
+                        color: Colors.white.withValues(alpha: 0.8)),
                   ),
                 ),
                 const SizedBox(height: 50),

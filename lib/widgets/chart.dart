@@ -32,21 +32,13 @@ class Chart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(15),
+      margin: const EdgeInsets.all(12),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        gradient: LinearGradient(
-          colors: [
-            appPrimaryColor.withValues(alpha: 0.3),
-            appPrimaryColor.withValues(alpha: 0.1),
-          ],
-          begin: Alignment.bottomCenter,
-          end: Alignment.topCenter,
-        ),
-      ),
+          borderRadius: BorderRadius.circular(8),
+          gradient: chartBackgroundGradient),
       child: Column(
         children: [
           Expanded(
